@@ -1,0 +1,99 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Land Property Website</title>
+<style>
+body {
+margin:0;
+font-family: Arail. sans-serif;
+background-color:#f4f4f4;
+}
+header {
+background-color:#2e7d32;
+color:white;
+padding:20px;
+text-aling:center;
+}
+nav {
+background-color: #1b5e20;
+padding:10px;
+text-align:center;
+}
+nav a {
+color:white;
+margin: 15px;
+text-decoration: none;
+font-weight:bold;
+}
+.container {
+padding: 20px;
+display: flex;
+justify-content: Space-around;
+}
+.card {
+background: white;
+width: 30%;
+padding:15px;
+border-radus: 8px;
+box-shadow: 0 0 10px gray;
+text-align:center;
+}
+.card img{
+width:100%;
+height: 180px;
+border-radius: 5px;
+}
+button {
+background-color: #2e7d32;
+color: white; 
+padding: 10px 15px;
+border: none;
+text-aling: center;
+padding: 10px;
+margin-top: 20px;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Green Land Properties</h1>
+<p>Buy & Sell Agricultural and Residential Lands</p>
+<nav>
+<a href="#">Home</a>
+<a href="#">Lands</a>
+<a href="#">About</a>
+< a href="#">Contact</a>
+</nav>
+<div class="container">
+<div class="card">
+<img src="https://via.placeholder.com/300*180?text=Agricultural+Land">
+<h3>Agricultural Land</h3>
+<p>Area: 5Acres</p>
+<p>Location: Trichy</p>
+<button onclick="bookLand('Agricultural Land')"Book Now</button>
+</div>
+<div class="card">
+<img src="https://sl.bing.net/c6SY2nZ9Dwq">
+<h3>Agricultural Land</h3>
+<p>Area: 5 Acres</p>
+<p>Location: Trichy</p>
+<button onclick="bookLand('Agricultural Land')"Book Now</button>
+</div>
+<div class="card">
+<img src="https://via.placeholder.com/300*800?text=Commercial+Land">
+<h3>Commercial Land</h3>
+<p>Area: 1 Acre</p>
+<p>Location: Coimbatore</p>
+<button onclick="bookland('commercial land')">Bokk Now</button>
+</div>
+</div>
+<footer>
+<p>&copy: 2026 Green Land Properties</p>
+</footer>
+<script>
+function bookLand(landType) {
+alert("you have selected" + landType +".our team will contact you soon!");
+</script>
+</boby>
+</html>
