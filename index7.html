@@ -6,25 +6,25 @@
 <style>
 body {
 margin:0;
-font-family: Arail. sans-serif;
+font-family: Arial, Sans-serif;
 background-color:#f4f4f4;
 }
 header {
-background-color:#2e7d32;
+background-color: #2e7bca;
 color:white;
 padding:20px;
-text-aling:center;
+text-align:center;
 }
 nav {
 background-color: #1b5e20;
-padding:10px;
-text-align:center;
+padding: 10px;
+text-align: center;
 }
 nav a {
-color:white;
+color: white; 
 margin: 15px;
 text-decoration: none;
-font-weight:bold;
+font-weight: bold;
 }
 .container {
 padding: 20px;
@@ -34,22 +34,31 @@ justify-content: Space-around;
 .card {
 background: white;
 width: 30%;
-padding:15px;
-border-radus: 8px;
+padding: 15px;
+border-radius: 8px;
 box-shadow: 0 0 10px gray;
-text-align:center;
+text-align: center;
 }
-.card img{
-width:100%;
+.card img {
+width: 100%;
 height: 180px;
 border-radius: 5px;
 }
 button {
 background-color: #2e7d32;
-color: white; 
-padding: 10px 15px;
+color: white;
+padding:10px 15px;
 border: none;
-text-aling: center;
+boder-radius: 5px;
+cursor: pointer;
+}
+button:hover {
+background-color: #1b5e20;
+}
+footer {
+background-color: #2e7d32;
+color: white;
+text-align: center;
 padding: 10px;
 margin-top: 20px;
 }
@@ -58,42 +67,43 @@ margin-top: 20px;
 <body>
 <header>
 <h1>Green Land Properties</h1>
-<p>Buy & Sell Agricultural and Residential Lands</p>
+<p>Buy & Sell Agriculture and Residential Lands</p>
+</header>
 <nav>
 <a href="#">Home</a>
 <a href="#">Lands</a>
 <a href="#">About</a>
-< a href="#">Contact</a>
+<a href="#">Contact</a>
 </nav>
 <div class="container">
 <div class="card">
-<img src="https://via.placeholder.com/300*180?text=Agricultural+Land">
-<h3>Agricultural Land</h3>
-<p>Area: 5Acres</p>
-<p>Location: Trichy</p>
-<button onclick="bookLand('Agricultural Land')"Book Now</button>
-</div>
-<div class="card">
-<img src="https://sl.bing.net/c6SY2nZ9Dwq">
+<img src="https://share.google/9zmsCiL3JoyRJcKiK">
 <h3>Agricultural Land</h3>
 <p>Area: 5 Acres</p>
 <p>Location: Trichy</p>
-<button onclick="bookLand('Agricultural Land')"Book Now</button>
+<button onclick="bookLand('Agricultural Land')">Book Now</button>
 </div>
 <div class="card">
-<img src="https://via.placeholder.com/300*800?text=Commercial+Land">
+<img src="https://share.google/VpgV08lR9Zjmovbrb">
+<h3>Residential Plot</h3>
+<p>Area: 2400 Sq.ft</p>
+<p>Location: Chennai</p>
+<button onclick="bookLand('Residential Plot')">Book Now</button>
+</div>
+<div class="card">
+<img src="https://share.google/WqhyDsQcgBQFxektD">
 <h3>Commercial Land</h3>
 <p>Area: 1 Acre</p>
 <p>Location: Coimbatore</p>
-<button onclick="bookland('commercial land')">Bokk Now</button>
+<button onclick="bookLand('Commercial Land')">Book Now</button>
 </div>
 </div>
 <footer>
-<p>&copy: 2026 Green Land Properties</p>
+<p>&copy; 2026 Green Land Properties</p>
 </footer>
 <script>
-function bookLand(landType) {
-alert("you have selected" + landType +".our team will contact you soon!");
+function BookLand(landtype) {
+alert("you have selected" + landtype + ".Our team will contact you soon!");
 </script>
-</boby>
+</body>
 </html>
